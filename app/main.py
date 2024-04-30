@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-import models
+import app.models as models
 # import database
 from database import engine
 from routes import post, user, auth, vote
