@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import app.models as models
 # import database
 from app.database import engine
-from routes import post, user, auth, vote
+from app.routes import post, user, auth, vote
 
 # database.Base.metadata.create_all(bind=engine)
 models.Base.metadata.create_all(bind=engine)
