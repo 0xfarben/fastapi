@@ -5,6 +5,7 @@ import app.database as database
 import app.models as models
 import app.oauth as oauth
 import app.schemas as schemas
+
 router = APIRouter(
     prefix="/vote",
     tags=['Vote']
