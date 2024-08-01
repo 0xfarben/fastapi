@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import models
-# import database
+from fastapi.responses import HTMLResponse
 from database import engine
 from routes import post, user, auth, vote
 
