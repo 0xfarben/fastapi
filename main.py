@@ -15,4 +15,27 @@ app.include_router(vote.router)
 
 @app.get("/")  
 async def root():
-    return {"message": "Hello ALL, Welcome to the World Of APIs"}
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome</title>
+        <style>
+            body {
+                background-color: #f0f8ff; /* Light blue background color */
+                color: #333; /* Dark text color */
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+            }
+            h1 {
+                color: #007acc; /* Blue text color for heading */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello ALL, Welcome to the World Of APIs</h1>
+        <p>Explore the fascinating world of APIs and their applications!</p>
+    </body>
+    </html>
+    """
