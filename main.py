@@ -23,22 +23,23 @@ async def root():
         <title>Welcome to SocialHub</title>
         <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
         <style>
-            body {
+            body, html {
+                height: 100%;
                 margin: 0;
                 font-family: Arial, sans-serif;
-            }
-            .parallax {
-                background-image: url('https://iili.io/dARyydv.jpg');
-                height: 100vh; 
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-image: url('https://iili.io/dA51lsV.png');
                 background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
             }
             .content {
-                text-align: center;
-                padding: 50px;
                 background-color: rgba(255, 255, 255, 0.8);
+                padding: 20px;
+                border-radius: 10px;
             }
             h1 {
                 color: #007acc;
