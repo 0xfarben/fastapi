@@ -31,7 +31,7 @@ async def root():
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                background-image: url('https://iili.io/dA51lsV.png');
+                background-image: url('https://iili.io/dA5D4hF.jpg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
