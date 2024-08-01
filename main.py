@@ -20,23 +20,52 @@ async def root():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Welcome</title>
+        <title>Welcome to SocialHub</title>
+        <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
         <style>
             body {
-                background-color: #f0f8ff; /* Light blue background color */
-                color: #333; /* Dark text color */
+                margin: 0;
                 font-family: Arial, sans-serif;
+            }
+            .parallax {
+                background-image: url('https://iili.io/dARyydv.jpg');
+                height: 100vh; 
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .content {
                 text-align: center;
                 padding: 50px;
+                background-color: rgba(255, 255, 255, 0.8);
             }
             h1 {
-                color: #007acc; /* Blue text color for heading */
+                color: #007acc;
+            }
+            p {
+                color: #333;
+            }
+            a {
+                color: #007acc;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         </style>
     </head>
     <body>
-        <h1>Hello ALL, Welcome to the World Of APIs</h1>
-        <p>Explore the fascinating world of APIs and their applications!</p>
+        <div class="parallax"></div>
+        <div class="content">
+            <h1>Hello ALL, Welcome to FastAPI-SocialHub</h1>
+            <p>Join us and connect with friends, share your moments, like posts, and much more!</p>
+            <p>Discover new features and stay engaged in the community.</p>
+            <div></div>
+            <p></p>
+            <p><a href="https://fastapi-a2sc.onrender.com/docs">Enter the App</a></p>
+        </div>
     </body>
     </html>
     """
