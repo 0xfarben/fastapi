@@ -65,3 +65,8 @@ cd socialhub
 pip install -r requirements.txt
 ```
 
+## Alternatively, you can install FastAPI and Uvicorn manually:
+
+```java
+pip install fastapi[all]
+```
