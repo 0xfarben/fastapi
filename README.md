@@ -68,3 +68,13 @@ pip install -r requirements.txt
 ```java
 pip install fastapi[all]
 ```
+
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
