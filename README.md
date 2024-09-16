@@ -60,13 +60,11 @@ cd socialhub
 
 ## Install Dependencies
 ### You can install the dependencies using the requirements.txt file. Run the following command:
-
 ```python
 pip install -r requirements.txt
 ```
 
-## Alternatively, you can install FastAPI and Uvicorn manually:
-
+### Alternatively, you can install FastAPI and Uvicorn manually:
 ```java
 pip install fastapi[all]
 ```
