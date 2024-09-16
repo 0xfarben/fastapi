@@ -94,5 +94,5 @@ uvicorn main:app --reload
 ## Access the API Documentation
 ### Once the application is running, you can access the interactive API documentation:
 
-- Swagger UI: [http://127.0.0.1:8000/docs](https://swagger.io/tools/swagger-ui/)
+- Swagger UI: https://swagger.io/tools/swagger-ui/
 - Redoc: http://127.0.0.1:8000/redoc
