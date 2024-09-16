@@ -12,7 +12,7 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - **Authentication**: Secure login system with JWT-based authentication.
 - **Voting System**: Users can upvote posts, with the option for back-voting but no down-vote logic.
 
-##Project Structure
+## Project Structure
 #### Main Application File: main.py
 The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
 It also sets up the database connection through SQLAlchemy.
