@@ -4,14 +4,14 @@
 </div>
 SocialHub is a basic social media platform built using FastAPI. This web application allows users to create posts, manage their profiles, authenticate securely, and engage with other users through likes and votes. It aims to provide core social media features while maintaining simplicity and performance.
 
-## Features
+# Features
 
 - **Post Management**: Create, update, delete, and view posts.
 - **User Managementn**: Register users, retrieve user information, and manage user profiles.
 - **Authentication**: Secure login system with JWT-based authentication.
 - **Voting System**: Users can upvote posts, with the option for back-voting but no down-vote logic.
 
-## Project Structure
+# Project Structure
 ### Main Application File: ```main.py```
 - The ```main.py``` file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
 - It also sets up the database connection through SQLAlchemy.
@@ -45,19 +45,19 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - **Auth Routes**: Login and secure authentication.
 - **Vote Routes**: Manage votes (upvote, back vote).
 
-## Installation & Setup
+# Installation & Setup
 ### Prerequisites
 - **Python 3.9+**
 - **PostgreSQL**
 
-## Clone the Repository
+# Clone the Repository
 
 ```python
 git clone https://github.com/0xfarben/fastapi.git
 cd socialhub
 ```
 
-## Install Dependencies
+# Install Dependencies
 ### You can install the dependencies using the requirements.txt file. Run the following command:
 ```python
 pip install -r requirements.txt
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 pip install fastapi[all]
 ```
 
-## Set up the Database
+# Set up the Database
 - Install and configure PostgreSQL.
 - Create a new database for the application.
 - Create a ```.env``` file in the root directory and add the following environment variables:
@@ -84,13 +84,13 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
 ```
 
-## Run the Application Locally
+# Run the Application Locally
 ### After setting up the database and environment variables, you can run the application using Uvicorn:
 ```
 uvicorn main:app --reload
 ```
 
-## Access the API Documentation
+# Access the API Documentation
 ### Once the application is running, you can access the interactive API documentation:
 
 - Swagger UI: https://swagger.io/tools/swagger-ui/
@@ -133,4 +133,8 @@ POST /vote
   "dir": 1
 }
 ```
+# Acknowledgments
+- [FastAPI](https://fastapi.tiangolo.com/) for building the web framework.
+- [SQLAlchemy](https://www.sqlalchemy.org/) for ORM support.
+- [Uvicorn](https://www.uvicorn.org/) for ASGI server implementation.
 
