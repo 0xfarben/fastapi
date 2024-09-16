@@ -14,9 +14,9 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 
 ## Project Structure
 #### Main Application File: main.py
-The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
-It also sets up the database connection through SQLAlchemy.
+- The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
+- It also sets up the database connection through SQLAlchemy.
 
 #### Configuration File: config.py
-The configuration file manages environment variables using Pydantic's BaseSettings.
-It loads database credentials, JWT secrets, and other configuration from a .env file.
+- The configuration file manages environment variables using Pydantic's BaseSettings.
+- It loads database credentials, JWT secrets, and other configuration from a .env file.
