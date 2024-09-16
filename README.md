@@ -13,10 +13,29 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - **Voting System**: Users can upvote posts, with the option for back-voting but no down-vote logic.
 
 ## Project Structure
-#### Main Application File: main.py
+### Main Application File: main.py
 - The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
 - It also sets up the database connection through SQLAlchemy.
 
-#### Configuration File: config.py
+### Configuration File: config.py
 - The configuration file manages environment variables using Pydantic's BaseSettings.
 - It loads database credentials, JWT secrets, and other configuration from a .env file.
+
+### Database Management: database.py
+- Defines the PostgreSQL connection using SQLAlchemy.
+- Provides a session management system for database transactions.
+
+### Models: models.py
+- SQLAlchemy models for database tables: Post, User, and Vote.
+- Implements relationships between the models to manage foreign keys.
+  
+### OAuth & Token Management: oauth.py
+- Handles JWT token creation and verification using the jose library.
+- Secure token-based authentication for user login and session management.
+  
+### Schemas: schemas.py
+- Pydantic models for request validation and response serialization.
+- Includes models for Posts, Users, Tokens, and Votes.
+  
+### Utility Functions: utils.py
+- Utility functions for password hashing and verification using bcrypt.
