@@ -39,3 +39,22 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
   
 ### Utility Functions: utils.py
 - Utility functions for password hashing and verification using bcrypt.
+
+### Routes
+- **Post Routes**: CRUD operations for posts.
+- **User Routes**: Create and retrieve user profiles.
+- **Auth Routes**: Login and secure authentication.
+- **Vote Routes**: Manage votes (upvote, back vote).
+
+## Installation & Setup
+###Prerequisites
+- **Python 3.9+**
+- **PostgreSQL**
+
+## Clone the Repository
+
+<pre>**git clone https://github.com/your-username/socialhub.git
+cd socialhub** </pre>
+
+git clone https://github.com/your-username/socialhub.git
+cd socialhub
