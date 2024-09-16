@@ -14,22 +14,22 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 
 ## Project Structure
 ### Main Application File: ```main.py```
-- The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
+- The ```main.py``` file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
 - It also sets up the database connection through SQLAlchemy.
 
 ### Configuration File: ```config.py```
-- The configuration file manages environment variables using Pydantic's BaseSettings.
-- It loads database credentials, JWT secrets, and other configuration from a .env file.
+- The configuration file manages environment variables using Pydantic's ```BaseSettings```.
+- It loads database credentials, JWT secrets, and other configuration from a ```.env``` file.
 
 ### Database Management: ```database.py```
 - Defines the PostgreSQL connection using SQLAlchemy.
 - Provides a session management system for database transactions.
 
-### Models: models.py
+### Models: ```models.py```
 - SQLAlchemy models for database tables: Post, User, and Vote.
 - Implements relationships between the models to manage foreign keys.
   
-### OAuth & Token Management: oauth.py
+### OAuth & Token Management: ```oauth.py```
 - Handles JWT token creation and verification using the ```jose``` library.
 - Secure token-based authentication for user login and session management.
   
@@ -74,6 +74,7 @@ pip install fastapi[all]
 - Create a new database for the application.
 - Create a ```.env``` file in the root directory and add the following environment variables:
 
+``` python
 DATABASE_HOSTNAME=localhost
 DATABASE_PORT=5432
 DATABASE_USERNAME=your_db_user
@@ -82,3 +83,16 @@ DATABASE_NAME=your_db_name
 SECRET_KEY=your_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=60
+```
+
+## Run the Application Locally
+### After setting up the database and environment variables, you can run the application using Uvicorn:
+```
+uvicorn main:app --reload
+```
+
+## Access the API Documentation
+### Once the application is running, you can access the interactive API documentation:
+
+- Swagger UI: [http://127.0.0.1:8000/docs](https://swagger.io/tools/swagger-ui/)
+- Redoc: http://127.0.0.1:8000/redoc
