@@ -13,15 +13,15 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - **Voting System**: Users can upvote posts, with the option for back-voting but no down-vote logic.
 
 ## Project Structure
-### Main Application File: main.py
+### Main Application File: ```main.py```
 - The main.py file initializes the FastAPI app and imports all necessary routes (Post, User, Auth, and Vote).
 - It also sets up the database connection through SQLAlchemy.
 
-### Configuration File: config.py
+### Configuration File: ```config.py```
 - The configuration file manages environment variables using Pydantic's BaseSettings.
 - It loads database credentials, JWT secrets, and other configuration from a .env file.
 
-### Database Management: database.py
+### Database Management: ```database.py```
 - Defines the PostgreSQL connection using SQLAlchemy.
 - Provides a session management system for database transactions.
 
@@ -30,7 +30,7 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - Implements relationships between the models to manage foreign keys.
   
 ### OAuth & Token Management: oauth.py
-- Handles JWT token creation and verification using the jose library.
+- Handles JWT token creation and verification using the ```jose``` library.
 - Secure token-based authentication for user login and session management.
   
 ### Schemas: schemas.py
@@ -38,7 +38,7 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - Includes models for Posts, Users, Tokens, and Votes.
   
 ### Utility Functions: utils.py
-- Utility functions for password hashing and verification using bcrypt.
+- Utility functions for password hashing and verification using ```bcrypt```.
 
 ### Routes
 - **Post Routes**: CRUD operations for posts.
@@ -69,12 +69,16 @@ pip install -r requirements.txt
 pip install fastapi[all]
 ```
 
-Here is a simple flow chart:
+## Set up the Database
+- Install and configure PostgreSQL.
+- Create a new database for the application.
+- Create a ```.env``` file in the root directory and add the following environment variables:
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+DATABASE_HOSTNAME=localhost
+DATABASE_PORT=5432
+DATABASE_USERNAME=your_db_user
+DATABASE_PASSWORD=your_db_password
+DATABASE_NAME=your_db_name
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
