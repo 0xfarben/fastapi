@@ -47,14 +47,13 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 - **Vote Routes**: Manage votes (upvote, back vote).
 
 ## Installation & Setup
-###Prerequisites
+### Prerequisites
 - **Python 3.9+**
 - **PostgreSQL**
 
 ## Clone the Repository
 
-<pre>**git clone https://github.com/your-username/socialhub.git
-cd socialhub** </pre>
-
-git clone https://github.com/your-username/socialhub.git
+```readme
+git clone https://github.com/0xfarben/fastapi.git
 cd socialhub
+```
