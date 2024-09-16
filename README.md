@@ -53,7 +53,15 @@ SocialHub is a basic social media platform built using FastAPI. This web applica
 
 ## Clone the Repository
 
-```readme
+```python
 git clone https://github.com/0xfarben/fastapi.git
 cd socialhub
 ```
+
+## Install Dependencies
+### You can install the dependencies using the requirements.txt file. Run the following command:
+
+```python
+pip install -r requirements.txt
+```
+
